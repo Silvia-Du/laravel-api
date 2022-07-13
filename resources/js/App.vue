@@ -6,7 +6,29 @@
 
 <script>
 export default {
-    name: 'App'
+    name: 'App',
+
+    data(){
+        return{
+            postApiUrl: '/api/posts',
+            posts: null,
+        }
+    },
+
+    methods: {
+        getPosts(){
+            axios.get(this.postApiUrl)
+            .then(response =>{
+                this.posts = response.data.posts;
+                console.log(this.posts);
+
+            })
+        }
+    },
+
+    mounted(){
+        this.getPosts();
+    }
 }
 </script>
 
