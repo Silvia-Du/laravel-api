@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/fornt/style.css') }}">
-    <script src="{{ asset('js/admin.js') }}" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+
+    <div id="app">
+
+    </div>
+    {{-- <div class="container">
 
         <h1>Boolpress-api</h1>
-    </div>
+    </div> --}}
+
+    <script src="{{ asset('js/front.js') }}"></script>
+
 
 </body>
 </html>
