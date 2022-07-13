@@ -1948,15 +1948,31 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("div", [_c("div", {
+    staticClass: "container"
+  }, [_c("h1", [_vm._v("Tutti i nostri blog post")]), _vm._v(" "), _c("div", {
+    staticClass: "row"
+  }, _vm._l(_vm.posts, function (post, index) {
+    return _c("div", {
+      key: "post".concat(index),
+      staticClass: "col-12 post p-1"
+    }, [_c("div", {
+      staticClass: "box p-3 rounded-lg d-flex"
+    }, [_c("div", {
+      staticClass: "box-left"
+    }, [_c("h3", [_vm._v("Titolo:" + _vm._s(post.title))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(post.content))]), _vm._v(" "), _c("p", [_vm._v("Tempo di lettura: " + _vm._s(post.reading_time))]), _vm._v(" "), _c("p", [_vm._v("Autore:" + _vm._s(post.author))])]), _vm._v(" "), post.tags != [] ? _c("div", {
+      staticClass: "box-right debug p-3"
+    }, [_c("h3", [_vm._v("I tag associati a questo post")]), _vm._v(" "), _vm._l(post.tags, function (tag, index) {
+      return _c("h3", {
+        key: "tag".concat(index)
+      }, [_c("span", {
+        staticClass: "badge badge-warning"
+      }, [_vm._v(_vm._s(tag.name))])]);
+    })], 2) : _vm._e()])]);
+  }), 0)])]);
 };
 
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", [_c("h1", [_vm._v("Ciaone da App Comp")])]);
-}];
+var staticRenderFns = [];
 render._withStripped = true;
 
 

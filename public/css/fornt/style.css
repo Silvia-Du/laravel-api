@@ -9264,3 +9264,16 @@ h3 {
 body {
   background-color: cadetblue;
 }
+
+.debug {
+  background-color: rgba(165, 42, 42, 0.596);
+}
+
+.box {
+  background-color: gainsboro;
+  height: 100%;
+}
+.box .box-left, .box .box-right {
+  width: 50%;
+  border-radius: 15px;
+}

@@ -12,13 +12,8 @@
     <div id="app">
 
     </div>
-    {{-- <div class="container">
 
-        <h1>Boolpress-api</h1>
-    </div> --}}
 
     <script src="{{ asset('js/front.js') }}"></script>
-
-
 </body>
 </html>
